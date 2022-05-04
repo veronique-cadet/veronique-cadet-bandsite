@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"bio.css"}
+{"version":3,"sources":["bio.scss","bio.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,SAAA;ACCJ;;ADCA;EACE,gBAAA;ACEF;;ADCA;EACE,aAAA;ACEF;;ADCA;EACG,qBAAA;EACA,eAAA;ACEH;;ADCA;EACE,qBAAA;ACEF;;ADCA;EACE,aAAA;ACEF;;ADCA;EACE,aAAA;EACA,gBAAA;ACEF;;ADEC;EACC,qBAAA;ACCF","file":"bio.css"}

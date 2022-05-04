@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+}
+
+.header__title {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation_list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__link {
+  text-decoration: none;
+}/*# sourceMappingURL=bio.css.map */
