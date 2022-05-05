@@ -1,34 +1,178 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-ul{
-  list-style: none;
-}
+
+@use "./partials/resets" as *;
+@use "./partials/typography" as *;
+@use "./partials/variables" as *;
+
 
 .header{
-  display: flex;
-}
+  background-color: $black;
+  padding: 16px;
+ 
 
-.header__title{
-   text-decoration: none;
-   font-size: 30px;
-}
+  &__logo{
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+  }
 
-.header__link{
-  text-decoration: none;
+  &__link{
+    text-decoration: none;
+  }
 }
 
 .navigation{
   display: flex;
+  justify-content: center;
+  padding-top: 16px;
+
+
+  &__list{
+    display: flex;
+    font-family: avenirdemi;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+  }
+  &__item{
+    display: flex;
+    
+  }
+
+  &__biography{
+    text-decoration: none;
+    color: $white;
+    margin-right: 100px;
+  
+  }
+
+  &__shows{
+    text-decoration: none;
+    color: $white;
+    margin-right: 16px;
+  }
+    
 }
+
+.hero{
+  position:absolute;
+  text-align: center;
+  margin: 0;
+
+  &__image{
+    max-width: 767px;
+    width: 100%;
+  }
+
+  &__text{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    color: $white;
+    font-family: avenirdemi;
+    font-size: 24px;
+  }
+}
+
+.biography{
+  &__text{
+    font-family: avenirdemi;
+    font-size: 24px;
+    line-height:32px;
+    position: relative;
+    top: 212px;
+    padding: 24px 16px 16px 16px;
+    margin-top: 0;
+  }
+}
+
+.biography__photo{
+  max-width: 767px;
+  width: 100%;
+  padding: 0 16px 16px 16px;
+  margin-top: 212px;
  
-.navigation_list{
-  display: flex;
-  list-style: none;
+}
 
- } 
+.biography__quote{
+  font-family: avenirdemi;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+  line-height: 22px;
+}
 
- .navigation__link{
-  text-decoration: none; 
- }
+.biography__quote--name{
+  font-family: avenirdemi;
+  font-size: 14px;
+  padding: 8px 16px 0px 16px;
+  line-height: 22px;
+}
+
+.biography__title{
+  font-family: avenir;
+  font-size: 14px;
+  padding: 24px 16px 0px 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.biography__one{
+  font-family: avenir;
+  font-size: 13px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right:16px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  line-height: 18px
+}
+.biography__two{
+  font-family: avenir;
+  font-size: 13px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right:16px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  line-height: 18px
+}
+
+
+.photos{
+  background-color: $alabaster;
+
+  &__title{
+   font-size: 24px;
+   line-height: 32px;
+   font-family: avenirdemi;
+   color: $black;
+   padding: 24px 16px 0px 16px; 
+  }
+  
+  &__gallery{
+  max-width: 767px;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  }
+}
+
+.footer{
+  padding: 24px 16px 16px 16px;
+  background-color: $black;
+  color: $white;
+  font-family: avenir;
+  margin-top: 16px;
+
+   &__socialheader{
+     font-size: 24px;
+     font-family: avenirdemi;
+     padding: 8px 0px 24px 0px;
+
+   }
+
+
+
+}

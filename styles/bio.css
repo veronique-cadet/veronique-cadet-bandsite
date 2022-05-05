@@ -7,28 +7,168 @@ ul {
   list-style: none;
 }
 
+@font-face {
+  font-family: avenir;
+  src: url("assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: avenirbold;
+  src: url("/assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: avenirdemi;
+  src: url("/assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+}
 .header {
+  background-color: #323232;
+  padding: 16px;
+}
+.header__logo {
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
-
-.header__title {
-  text-decoration: none;
-  font-size: 30px;
-}
-
 .header__link {
   text-decoration: none;
 }
 
 .navigation {
   display: flex;
+  justify-content: center;
+  padding-top: 16px;
 }
-
-.navigation_list {
+.navigation__list {
   display: flex;
-  list-style: none;
+  font-family: avenirdemi;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+}
+.navigation__item {
+  display: flex;
+}
+.navigation__biography {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 100px;
+}
+.navigation__shows {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 16px;
 }
 
-.navigation__link {
-  text-decoration: none;
+.hero {
+  position: absolute;
+  text-align: center;
+  margin: 0;
+}
+.hero__image {
+  max-width: 767px;
+  width: 100%;
+}
+.hero__text {
+  position: absolute;
+  top: 42%;
+  left: 5%;
+  color: #ffffff;
+  font-family: avenirdemi;
+  font-size: 24px;
+}
+
+.biography__text {
+  font-family: avenirdemi;
+  font-size: 24px;
+  line-height: 32px;
+  position: relative;
+  top: 212px;
+  padding: 24px 16px 16px 16px;
+  margin-top: 0;
+}
+
+.biography__photo {
+  max-width: 767px;
+  width: 100%;
+  padding: 0 16px 16px 16px;
+  margin-top: 212px;
+}
+
+.biography__quote {
+  font-family: avenirdemi;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0;
+  line-height: 22px;
+}
+
+.biography__quote--name {
+  font-family: avenirdemi;
+  font-size: 14px;
+  padding: 8px 16px 0px 16px;
+  line-height: 22px;
+}
+
+.biography__title {
+  font-family: avenir;
+  font-size: 14px;
+  padding: 24px 16px 0px 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.biography__one {
+  font-family: avenir;
+  font-size: 13px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.biography__two {
+  font-family: avenir;
+  font-size: 13px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.photos {
+  background-color: #fafafa;
+}
+.photos__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: avenirdemi;
+  color: #323232;
+  padding: 24px 16px 0px 16px;
+}
+.photos__gallery {
+  max-width: 767px;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer {
+  padding: 24px 16px 16px 16px;
+  background-color: #323232;
+  color: #ffffff;
+  font-family: avenir;
+  margin-top: 16px;
+}
+.footer__socialheader {
+  font-size: 24px;
+  font-family: avenirdemi;
+  padding: 8px 0px 24px 0px;
 }/*# sourceMappingURL=bio.css.map */
