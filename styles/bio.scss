@@ -6,7 +6,7 @@
 
 .header{
   background-color: $black;
-  padding: 16px;
+  padding: 24px 16px 16px 16px;
  
 
   &__logo{
@@ -22,91 +22,97 @@
 
 .navigation{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-top: 16px;
+  width: 100%;
 
 
   &__list{
     display: flex;
-    font-family: avenirdemi;
+    justify-content: space-evenly;
+    font-family: avenir;
     font-size: 14px;
     line-height: 22px;
     padding: 0;
+    font-weight: 600;
   }
   &__item{
+    width: 50%;
     display: flex;
-    
+    justify-content: center;
   }
 
   &__biography{
     text-decoration: none;
     color: $white;
-    margin-right: 100px;
-  
   }
 
   &__shows{
     text-decoration: none;
     color: $white;
-    margin-right: 16px;
   }
-    
 }
 
 .hero{
-  position:absolute;
-  text-align: center;
-  margin: 0;
 
   &__image{
-    max-width: 767px;
     width: 100%;
+    height: 70vh;
+    background-image: url(../assets/images/hero-bio.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
   }
 
   &__text{
-    position: absolute;
-    top: 42%;
-    left: 5%;
     color: $white;
-    font-family: avenirdemi;
+    font-family: avenir;
     font-size: 24px;
+    padding-left: 16px;
+    font-weight: 600;
   }
 }
 
 .biography{
   &__text{
-    font-family: avenirdemi;
+    font-family: avenir;
     font-size: 24px;
     line-height:32px;
-    position: relative;
-    top: 212px;
     padding: 24px 16px 16px 16px;
     margin-top: 0;
+    font-weight: 600;
+    color: $black;
   }
 }
 
 .biography__photo{
-  max-width: 767px;
   width: 100%;
   padding: 0 16px 16px 16px;
-  margin-top: 212px;
  
 }
 
 .biography__quote{
-  font-family: avenirdemi;
+  font-family: avenir;
   font-size: 14px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 0;
   line-height: 22px;
+  font-weight: 600;
+  color: $black;
 }
 
 .biography__quote--name{
-  font-family: avenirdemi;
+  font-family: avenir;
   font-size: 14px;
   padding: 8px 16px 0px 16px;
   line-height: 22px;
+  font-weight: 600;
+  color: $black;
+
 }
 
 .biography__title{
@@ -115,6 +121,8 @@
   padding: 24px 16px 0px 16px;
   font-weight: 500;
   line-height: 22px;
+  font-weight: 600;
+  color: $black;
 }
 
 .biography__one{
@@ -125,7 +133,8 @@
   padding-right:16px;
   padding-bottom: 8px;
   font-weight: 400;
-  line-height: 18px
+  line-height: 18px;
+  color: $black;
 }
 .biography__two{
   font-family: avenir;
@@ -135,7 +144,8 @@
   padding-right:16px;
   padding-bottom: 16px;
   font-weight: 400;
-  line-height: 18px
+  line-height: 18px;
+  color: $black;
 }
 
 
@@ -145,13 +155,14 @@
   &__title{
    font-size: 24px;
    line-height: 32px;
-   font-family: avenirdemi;
+   font-family: avenir;
    color: $black;
    padding: 24px 16px 0px 16px; 
+   font-weight: 600;
+   color: $black;
   }
   
   &__gallery{
-  max-width: 767px;
   width: 100%;
   padding-top: 16px;
   padding-left: 16px;
@@ -159,20 +170,54 @@
   }
 }
 
+
+
 .footer{
   padding: 24px 16px 16px 16px;
   background-color: $black;
   color: $white;
   font-family: avenir;
   margin-top: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
 
-   &__socialheader{
-     font-size: 24px;
-     font-family: avenirdemi;
-     padding: 8px 0px 24px 0px;
-
+  &__socialheader{
+    font-size: 24px;
+    font-family: avenir;
+    font-weight: 600;
+    padding: 8px 0px 24px 0px;
    }
 
+  &__links{
+    margin-right: 2rem;
+   }
 
+  &__cam{
+    padding-top: 24px;
+  }
 
+  &__name{
+    font-family: avenir;
+    font-weight: 600;
+  }
+
+  &__address{
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__email{
+    padding-bottom: 24px;   
+  }
+  &__email-link{
+    text-decoration: none;
+    color: white;
+  }
+  &__copyright{
+    padding-top: 48px;
+  }
+  &__logo{
+    padding-bottom: 24px;
+  }
 }

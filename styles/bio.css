@@ -9,22 +9,22 @@ ul {
 
 @font-face {
   font-family: avenir;
-  src: url("assets/fonts/AvenirNextLTPro-Regular.otf");
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
   font-weight: 400;
 }
 @font-face {
-  font-family: avenirbold;
+  font-family: avenir;
   src: url("/assets/fonts/AvenirNextLTPro-Bold.otf");
   font-weight: 700;
 }
 @font-face {
-  font-family: avenirdemi;
+  font-family: avenir;
   src: url("/assets/fonts/AvenirNextLTPro-Demi.otf");
   font-weight: 600;
 }
 .header {
   background-color: #323232;
-  padding: 16px;
+  padding: 24px 16px 16px 16px;
 }
 .header__logo {
   display: flex;
@@ -37,79 +37,85 @@ ul {
 
 .navigation {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-top: 16px;
+  width: 100%;
 }
 .navigation__list {
   display: flex;
-  font-family: avenirdemi;
+  justify-content: space-evenly;
+  font-family: avenir;
   font-size: 14px;
   line-height: 22px;
   padding: 0;
+  font-weight: 600;
 }
 .navigation__item {
+  width: 50%;
   display: flex;
+  justify-content: center;
 }
 .navigation__biography {
   text-decoration: none;
   color: #ffffff;
-  margin-right: 100px;
 }
 .navigation__shows {
   text-decoration: none;
   color: #ffffff;
-  margin-right: 16px;
 }
 
-.hero {
-  position: absolute;
-  text-align: center;
-  margin: 0;
-}
 .hero__image {
-  max-width: 767px;
   width: 100%;
+  height: 70vh;
+  background-image: url(../assets/images/hero-bio.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 .hero__text {
-  position: absolute;
-  top: 42%;
-  left: 5%;
   color: #ffffff;
-  font-family: avenirdemi;
+  font-family: avenir;
   font-size: 24px;
+  padding-left: 16px;
+  font-weight: 600;
 }
 
 .biography__text {
-  font-family: avenirdemi;
+  font-family: avenir;
   font-size: 24px;
   line-height: 32px;
-  position: relative;
-  top: 212px;
   padding: 24px 16px 16px 16px;
   margin-top: 0;
+  font-weight: 600;
+  color: #323232;
 }
 
 .biography__photo {
-  max-width: 767px;
   width: 100%;
   padding: 0 16px 16px 16px;
-  margin-top: 212px;
 }
 
 .biography__quote {
-  font-family: avenirdemi;
+  font-family: avenir;
   font-size: 14px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 0;
   line-height: 22px;
+  font-weight: 600;
+  color: #323232;
 }
 
 .biography__quote--name {
-  font-family: avenirdemi;
+  font-family: avenir;
   font-size: 14px;
   padding: 8px 16px 0px 16px;
   line-height: 22px;
+  font-weight: 600;
+  color: #323232;
 }
 
 .biography__title {
@@ -118,6 +124,8 @@ ul {
   padding: 24px 16px 0px 16px;
   font-weight: 500;
   line-height: 22px;
+  font-weight: 600;
+  color: #323232;
 }
 
 .biography__one {
@@ -129,6 +137,7 @@ ul {
   padding-bottom: 8px;
   font-weight: 400;
   line-height: 18px;
+  color: #323232;
 }
 
 .biography__two {
@@ -140,6 +149,7 @@ ul {
   padding-bottom: 16px;
   font-weight: 400;
   line-height: 18px;
+  color: #323232;
 }
 
 .photos {
@@ -148,12 +158,13 @@ ul {
 .photos__title {
   font-size: 24px;
   line-height: 32px;
-  font-family: avenirdemi;
+  font-family: avenir;
   color: #323232;
   padding: 24px 16px 0px 16px;
+  font-weight: 600;
+  color: #323232;
 }
 .photos__gallery {
-  max-width: 767px;
   width: 100%;
   padding-top: 16px;
   padding-left: 16px;
@@ -166,9 +177,40 @@ ul {
   color: #ffffff;
   font-family: avenir;
   margin-top: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
 }
 .footer__socialheader {
   font-size: 24px;
-  font-family: avenirdemi;
+  font-family: avenir;
+  font-weight: 600;
   padding: 8px 0px 24px 0px;
+}
+.footer__links {
+  margin-right: 2rem;
+}
+.footer__cam {
+  padding-top: 24px;
+}
+.footer__name {
+  font-family: avenir;
+  font-weight: 600;
+}
+.footer__address {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.footer__email {
+  padding-bottom: 24px;
+}
+.footer__email-link {
+  text-decoration: none;
+  color: white;
+}
+.footer__copyright {
+  padding-top: 48px;
+}
+.footer__logo {
+  padding-bottom: 24px;
 }/*# sourceMappingURL=bio.css.map */
