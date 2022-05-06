@@ -26,35 +26,66 @@ ul {
   background-color: #323232;
   padding: 24px 16px 16px 16px;
 }
+@media (min-width: 768px) {
+  .header {
+    padding: 36px;
+    display: flex;
+  }
+}
 .header__logo {
   display: flex;
-  justify-content: center;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    margin-right: 48px;
+    height: 20px;
+    width: 120px;
+    margin-top: 7px;
+  }
 }
 .header__link {
   text-decoration: none;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 16px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .navigation {
+    padding-top: 0;
+    align-self: center;
+    width: 100%;
+  }
 }
 .navigation__list {
   display: flex;
-  justify-content: space-evenly;
   font-family: avenir;
   font-size: 14px;
   line-height: 22px;
   padding: 0;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .navigation__list {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+}
 .navigation__item {
   width: 50%;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .navigation__item {
+    width: 20%;
+    justify-content: end;
+  }
 }
 .navigation__biography {
   text-decoration: none;
@@ -75,12 +106,24 @@ ul {
   display: flex;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .hero__image {
+    height: 140vh;
+  }
+}
 .hero__text {
   color: #ffffff;
   font-family: avenir;
   font-size: 24px;
   padding-left: 16px;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    padding-left: 36px;
+    font-size: 60px;
+    line-height: 68px;
+  }
 }
 
 .biography__text {
@@ -92,10 +135,22 @@ ul {
   font-weight: 600;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .biography__text {
+    padding: 48px 36px 36px 36px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
 
 .biography__photo {
   width: 100%;
   padding: 0 16px 16px 16px;
+}
+@media (min-width: 768px) {
+  .biography__photo {
+    padding: 0 80px 36px 80px;
+  }
 }
 
 .biography__quote {
@@ -108,6 +163,14 @@ ul {
   font-weight: 600;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .biography__quote {
+    padding: 0 80px;
+    font-size: 24px;
+    line-height: 32px;
+    inline-size: 105.02vw;
+  }
+}
 
 .biography__quote--name {
   font-family: avenir;
@@ -116,6 +179,11 @@ ul {
   line-height: 22px;
   font-weight: 600;
   color: #323232;
+}
+@media (min-width: 768px) {
+  .biography__quote--name {
+    padding: 18px 80px 64px 80px;
+  }
 }
 
 .biography__title {
@@ -126,6 +194,13 @@ ul {
   line-height: 22px;
   font-weight: 600;
   color: #323232;
+}
+@media (min-width: 768px) {
+  .biography__title {
+    padding: 0px 64px 36px 64px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .biography__one {
@@ -139,6 +214,11 @@ ul {
   line-height: 18px;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .biography__one {
+    padding: 0px 64px 36px 64px;
+  }
+}
 
 .biography__two {
   font-family: avenir;
@@ -150,6 +230,17 @@ ul {
   font-weight: 400;
   line-height: 18px;
   color: #323232;
+}
+@media (min-width: 768px) {
+  .biography__two {
+    padding: 0px 64px 36px 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .biography__passage {
+    display: flex;
+  }
 }
 
 .photos {
@@ -164,11 +255,36 @@ ul {
   font-weight: 600;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .photos__title {
+    padding: 48px 36px 28px 36px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
 .photos__gallery {
   width: 100%;
   padding-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .photos__gallery {
+    padding: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .photos__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 28px 36px 28px;
+  }
+}
+@media (min-width: 768px) {
+  .photos__items {
+    width: 33.3333333333%;
+  }
 }
 
 .footer {
@@ -180,6 +296,11 @@ ul {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 0;
+  }
 }
 .footer__socialheader {
   font-size: 24px;
