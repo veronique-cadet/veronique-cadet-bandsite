@@ -29,10 +29,8 @@
     
   &__link{
     text-decoration: none;
-
   }
 }
-
 
 .navigation{
   
@@ -44,8 +42,6 @@
   @include tablet {
     padding-top: 0;
     align-self: center;
-    width: 100%;
-
   }
 
   &__list{
@@ -57,9 +53,9 @@
     font-weight: 600;
    
     @include tablet {
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 20px;
       font-weight: 300;
+      margin-top: 7px;
     }  
   }
 
@@ -121,6 +117,7 @@
 
 .biography{
 
+
   &__text{
     font-family: avenir;
     font-size: 24px;
@@ -131,17 +128,20 @@
     color: $black;
 
     @include tablet{
-      padding: 48px 36px 36px 36px;
+      padding-top: 48px; 
+      padding-bottom:36px;
+      padding-left: 36px;
       font-size: 36px;
       line-height: 44px;
     }
   }
 }
+
 .biography__photo{
   width: 100%;
   padding: 0 16px 16px 16px;
   @include tablet{
-    padding: 0 80px 36px 80px;
+    padding: 0 95px 36px 95px;
   }
  
 }
@@ -157,10 +157,11 @@
   color: $black;
 
   @include tablet{
-    padding: 0 80px;
-    font-size: 24px;
+    font-size: 22px;
+    padding-left: 95px;
+    padding-right: 95px;
     line-height: 32px;
-    inline-size: 105.02vw;
+    
   }
 }
 
@@ -173,7 +174,8 @@
   color: $black;
 
   @include tablet{
-    padding: 18px 80px 64px 80px ;
+    padding: 18px 90px 64px 90px;
+    font-size: 20px;
   }
 }
 
@@ -188,8 +190,8 @@
   color: $black;
 
   @include tablet{
-    padding: 0px 64px 36px 64px;
-    font-size: 24px;
+    padding:0px 90px 36px 90px;
+    font-size: 27px;
     line-height: 32px;
   }
 }
@@ -206,7 +208,7 @@
   color: $black;
 
   @include tablet{
-    padding: 0px 64px 36px 64px;
+    padding: 0;
   }
 }
 
@@ -222,12 +224,18 @@
   color: $black;
 
   @include tablet{
-    padding: 0px 64px 36px 64px;
+    padding: 0;
+    padding-right: 20px;
   }
 }
+
 .biography__passage{
   @include tablet{
     display: flex;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 36px;
+    column-gap: 40px;
   }
 }
 
@@ -335,3 +343,4 @@
     padding-bottom: 24px;
   }
 }
+

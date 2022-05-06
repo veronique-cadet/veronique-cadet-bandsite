@@ -58,7 +58,6 @@ ul {
   .navigation {
     padding-top: 0;
     align-self: center;
-    width: 100%;
   }
 }
 .navigation__list {
@@ -71,9 +70,9 @@ ul {
 }
 @media (min-width: 768px) {
   .navigation__list {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
     font-weight: 300;
+    margin-top: 7px;
   }
 }
 .navigation__item {
@@ -137,7 +136,9 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__text {
-    padding: 48px 36px 36px 36px;
+    padding-top: 48px;
+    padding-bottom: 36px;
+    padding-left: 36px;
     font-size: 36px;
     line-height: 44px;
   }
@@ -149,7 +150,7 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__photo {
-    padding: 0 80px 36px 80px;
+    padding: 0 95px 36px 95px;
   }
 }
 
@@ -165,10 +166,10 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__quote {
-    padding: 0 80px;
-    font-size: 24px;
+    font-size: 22px;
+    padding-left: 95px;
+    padding-right: 95px;
     line-height: 32px;
-    inline-size: 105.02vw;
   }
 }
 
@@ -182,7 +183,8 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__quote--name {
-    padding: 18px 80px 64px 80px;
+    padding: 18px 90px 64px 90px;
+    font-size: 20px;
   }
 }
 
@@ -197,8 +199,8 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__title {
-    padding: 0px 64px 36px 64px;
-    font-size: 24px;
+    padding: 0px 90px 36px 90px;
+    font-size: 27px;
     line-height: 32px;
   }
 }
@@ -216,7 +218,7 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__one {
-    padding: 0px 64px 36px 64px;
+    padding: 0;
   }
 }
 
@@ -233,13 +235,19 @@ ul {
 }
 @media (min-width: 768px) {
   .biography__two {
-    padding: 0px 64px 36px 64px;
+    padding: 0;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: 768px) {
   .biography__passage {
     display: flex;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 36px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 
