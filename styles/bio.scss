@@ -192,7 +192,6 @@
   @include tablet{
     padding:0px 90px 36px 90px;
     font-size: 27px;
-    line-height: 32px;
   }
 }
 
@@ -209,6 +208,9 @@
 
   @include tablet{
     padding: 0;
+    font-size:  14px;
+    line-height: 22px;
+   
   }
 }
 
@@ -225,7 +227,11 @@
 
   @include tablet{
     padding: 0;
-    padding-right: 20px;
+    font-size: 14px;
+    line-height: 22px;
+   
+
+
   }
 }
 
@@ -235,7 +241,7 @@
     padding-left: 90px;
     padding-right: 90px;
     padding-bottom: 36px;
-    column-gap: 40px;
+    column-gap: 33px;
   }
 }
 
@@ -298,15 +304,24 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+
   @include tablet{
     margin-top: 0;
+    padding: 0;
+    position: relative;
   }
 
-  &__socialheader{
+  &__social-header{
     font-size: 24px;
     font-family: avenir;
     font-weight: 600;
     padding: 8px 0px 24px 0px;
+    
+    @include tablet{
+      font-size: 36px;
+      padding-bottom: 0;
+    }
+
    }
 
   &__links{
@@ -315,7 +330,18 @@
 
   &__cam{
     padding-top: 24px;
+    @include tablet{
+      padding-top: 0px ;
+      margin-right: 64px;
+    }
   }
+
+  &__pearl{
+    @include tablet{
+      margin-right: 60px;
+    }
+  }
+
 
   &__name{
     font-family: avenir;
@@ -337,10 +363,53 @@
 
   &__copyright{
     padding-top: 48px;
+    @include tablet{
+    padding-top: 0;
+    }
   }
   
   &__logo{
     padding-bottom: 24px;
+    @include tablet{
+      position: absolute;
+      right: 35px;
+      top: 61px;
+      padding-bottom: 0;
+     
+    }
+  }
+
+  &__socials-container{
+    @include tablet{
+    display: flex;
+    margin-left: 36px;
+    padding-top: 48px;
+    margin-bottom: 0px;
+    margin-right: 36px;
+    }
+  }
+
+  &__socials{
+   @include tablet{
+    margin-top: 11px;
+    margin-left: 36px;
+    margin-bottom: 36px;
+   }
+  }
+
+  &__contacts{
+    @include tablet{
+      display: flex;
+      margin-left: 36px;
+    }
+  }
+
+  &__copy{
+    @include tablet{
+      padding-bottom: 36px;
+      padding-top: 48px;
+      margin-left: 36px;
+    }
   }
 }
 

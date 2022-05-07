@@ -201,7 +201,6 @@ ul {
   .biography__title {
     padding: 0px 90px 36px 90px;
     font-size: 27px;
-    line-height: 32px;
   }
 }
 
@@ -219,6 +218,8 @@ ul {
 @media (min-width: 768px) {
   .biography__one {
     padding: 0;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -236,7 +237,8 @@ ul {
 @media (min-width: 768px) {
   .biography__two {
     padding: 0;
-    padding-right: 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -246,8 +248,8 @@ ul {
     padding-left: 90px;
     padding-right: 90px;
     padding-bottom: 36px;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    -moz-column-gap: 33px;
+         column-gap: 33px;
   }
 }
 
@@ -308,19 +310,38 @@ ul {
 @media (min-width: 768px) {
   .footer {
     margin-top: 0;
+    padding: 0;
+    position: relative;
   }
 }
-.footer__socialheader {
+.footer__social-header {
   font-size: 24px;
   font-family: avenir;
   font-weight: 600;
   padding: 8px 0px 24px 0px;
+}
+@media (min-width: 768px) {
+  .footer__social-header {
+    font-size: 36px;
+    padding-bottom: 0;
+  }
 }
 .footer__links {
   margin-right: 2rem;
 }
 .footer__cam {
   padding-top: 24px;
+}
+@media (min-width: 768px) {
+  .footer__cam {
+    padding-top: 0px;
+    margin-right: 64px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__pearl {
+    margin-right: 60px;
+  }
 }
 .footer__name {
   font-family: avenir;
@@ -340,6 +361,48 @@ ul {
 .footer__copyright {
   padding-top: 48px;
 }
+@media (min-width: 768px) {
+  .footer__copyright {
+    padding-top: 0;
+  }
+}
 .footer__logo {
   padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .footer__logo {
+    position: absolute;
+    right: 35px;
+    top: 61px;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer__socials-container {
+    display: flex;
+    margin-left: 36px;
+    padding-top: 48px;
+    margin-bottom: 0px;
+    margin-right: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__socials {
+    margin-top: 11px;
+    margin-left: 36px;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__contacts {
+    display: flex;
+    margin-left: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__copy {
+    padding-bottom: 36px;
+    padding-top: 48px;
+    margin-left: 36px;
+  }
 }/*# sourceMappingURL=bio.css.map */
