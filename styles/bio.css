@@ -24,12 +24,17 @@ ul {
 }
 .header {
   background-color: #323232;
-  padding: 24px 16px 16px 16px;
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 @media (min-width: 768px) {
   .header {
-    padding: 36px;
+    padding: 2.25rem;
     display: flex;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    padding-left: 8.125rem;
   }
 }
 .header__logo {
@@ -38,10 +43,10 @@ ul {
 }
 @media (min-width: 768px) {
   .header__logo {
-    margin-right: 48px;
-    height: 20px;
-    width: 120px;
-    margin-top: 7px;
+    margin-right: 3rem;
+    height: 1.25rem;
+    width: 7.5rem;
+    margin-top: 0.438rem;
   }
 }
 .header__link {
@@ -49,7 +54,7 @@ ul {
 }
 
 .navigation {
-  padding-top: 16px;
+  padding-top: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,16 +68,16 @@ ul {
 .navigation__list {
   display: flex;
   font-family: avenir;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   padding: 0;
   font-weight: 600;
 }
 @media (min-width: 768px) {
   .navigation__list {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
-    margin-top: 7px;
+    margin-top: 0.438rem;
   }
 }
 .navigation__item {
@@ -86,9 +91,20 @@ ul {
     justify-content: end;
   }
 }
+@media (min-width: 1280px) {
+  .navigation__item {
+    justify-content: flex-start;
+    width: 16%;
+  }
+}
 .navigation__biography {
   text-decoration: none;
   color: #ffffff;
+}
+@media (min-width: 1280px) {
+  .navigation__biography {
+    padding-left: 0.625rem;
+  }
 }
 .navigation__shows {
   text-decoration: none;
@@ -97,7 +113,7 @@ ul {
 
 .hero__image {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   background-image: url(../assets/images/hero-bio.jpg);
   background-size: cover;
   position: relative;
@@ -107,149 +123,194 @@ ul {
 }
 @media (min-width: 768px) {
   .hero__image {
-    height: 140vh;
+    height: 113vh;
+    background-position: bottom;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__image {
+    height: 113vh;
+    background-position: top;
   }
 }
 .hero__text {
   color: #ffffff;
   font-family: avenir;
-  font-size: 24px;
-  padding-left: 16px;
+  font-size: 1.5rem;
+  padding-left: 1rem;
   font-weight: 600;
 }
 @media (min-width: 768px) {
   .hero__text {
-    padding-left: 36px;
-    font-size: 60px;
-    line-height: 68px;
+    padding-left: 2.25rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__text {
+    padding-left: 8.125rem;
   }
 }
 
 .biography__text {
   font-family: avenir;
-  font-size: 24px;
-  line-height: 32px;
-  padding: 24px 16px 16px 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   margin-top: 0;
   font-weight: 600;
   color: #323232;
 }
 @media (min-width: 768px) {
   .biography__text {
-    padding-top: 48px;
-    padding-bottom: 36px;
-    padding-left: 36px;
-    font-size: 36px;
-    line-height: 44px;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    padding-left: 2.25rem;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 1280px) {
+  .biography__text {
+    padding-left: 8.125rem;
   }
 }
 
 .biography__photo {
   width: 100%;
-  padding: 0 16px 16px 16px;
+  padding: 0 1rem 1rem 1rem;
 }
 @media (min-width: 768px) {
   .biography__photo {
-    padding: 0 95px 36px 95px;
+    padding: 0 5.625rem 2.25rem 5.625rem;
+  }
+}
+@media (min-width: 1280px) {
+  .biography__photo {
+    padding-left: 13.75rem;
+    padding-right: 13.75rem;
   }
 }
 
 .biography__quote {
   font-family: avenir;
-  font-size: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0;
-  line-height: 22px;
+  line-height: 1.375rem;
   font-weight: 600;
   color: #323232;
 }
 @media (min-width: 768px) {
   .biography__quote {
-    font-size: 22px;
-    padding-left: 95px;
-    padding-right: 95px;
-    line-height: 32px;
+    font-size: 1.375rem;
+    padding-left: 5.625rem;
+    padding-right: 5.938rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .biography__quote {
+    padding-left: 13.75rem;
+    padding-right: 25rem;
   }
 }
 
 .biography__quote--name {
   font-family: avenir;
-  font-size: 14px;
-  padding: 8px 16px 0px 16px;
-  line-height: 22px;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem 0 1rem;
+  line-height: 1.375rem;
   font-weight: 600;
   color: #323232;
 }
 @media (min-width: 768px) {
   .biography__quote--name {
-    padding: 18px 90px 64px 90px;
+    padding: 1.125rem 5.625rem 4.635rem 5.625rem;
     font-size: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .biography__quote--name {
+    padding-left: 13.75rem;
   }
 }
 
 .biography__title {
   font-family: avenir;
-  font-size: 14px;
-  padding: 24px 16px 0px 16px;
+  font-size: 0.875rem;
+  padding: 1.5rem 1rem 0px 1rem;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.375rem;
   font-weight: 600;
   color: #323232;
 }
 @media (min-width: 768px) {
   .biography__title {
-    padding: 0px 90px 36px 90px;
-    font-size: 27px;
+    padding: 0px 5.625rem 2.25rem 5.625rem;
+    font-size: 1.688rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .biography__title {
+    padding-left: 13.75rem;
   }
 }
 
 .biography__one {
   font-family: avenir;
-  font-size: 13px;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 8px;
+  font-size: 0.813rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.813rem;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.125rem;
   color: #323232;
 }
 @media (min-width: 768px) {
   .biography__one {
     padding: 0;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
 .biography__two {
   font-family: avenir;
-  font-size: 13px;
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  font-size: 0.813rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.125rem;
   color: #323232;
 }
 @media (min-width: 768px) {
   .biography__two {
     padding: 0;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width: 768px) {
   .biography__passage {
     display: flex;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 36px;
-    -moz-column-gap: 33px;
-         column-gap: 33px;
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
+    padding-bottom: 2.25rem;
+    -moz-column-gap: 2.063rem;
+         column-gap: 2.063rem;
+  }
+}
+@media (min-width: 1280px) {
+  .biography__passage {
+    padding-left: 13.75rem;
+    padding-right: 13.75rem;
   }
 }
 
@@ -257,30 +318,35 @@ ul {
   background-color: #fafafa;
 }
 .photos__title {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: avenir;
   color: #323232;
-  padding: 24px 16px 0px 16px;
+  padding: 1.5rem 1rem 0 1rem;
   font-weight: 600;
   color: #323232;
 }
 @media (min-width: 768px) {
   .photos__title {
-    padding: 48px 36px 28px 36px;
-    font-size: 36px;
-    line-height: 44px;
+    padding: 48px 36px 0px 36px;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 1280px) {
+  .photos__title {
+    padding-left: 8.125rem;
   }
 }
 .photos__gallery {
   width: 100%;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media (min-width: 768px) {
   .photos__gallery {
-    padding: 8px;
+    padding: 0.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -288,7 +354,18 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0px 28px 36px 28px;
+    padding: 0px 1.75rem 2.25rem 1.75rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .photos__container {
+    padding-top: 1.75rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .photos__container {
+    padding-left: 7.625rem;
+    padding-right: 7.625rem;
   }
 }
 @media (min-width: 768px) {
@@ -298,14 +375,14 @@ ul {
 }
 
 .footer {
-  padding: 24px 16px 16px 16px;
+  padding: 1.5rem 1rem 1rem 1rem;
   background-color: #323232;
   color: #ffffff;
   font-family: avenir;
-  margin-top: 16px;
-  font-size: 13px;
+  margin-top: 1rem;
+  font-size: 0.813rem;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 @media (min-width: 768px) {
   .footer {
@@ -314,15 +391,20 @@ ul {
     position: relative;
   }
 }
+@media (min-width: 1280px) {
+  .footer {
+    padding-left: 8.125rem;
+  }
+}
 .footer__social-header {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: avenir;
   font-weight: 600;
-  padding: 8px 0px 24px 0px;
+  padding: 0.5rem 0 1.25rem 0;
 }
 @media (min-width: 768px) {
   .footer__social-header {
-    font-size: 36px;
+    font-size: 2.25rem;
     padding-bottom: 0;
   }
 }
@@ -330,17 +412,17 @@ ul {
   margin-right: 2rem;
 }
 .footer__cam {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 @media (min-width: 768px) {
   .footer__cam {
-    padding-top: 0px;
-    margin-right: 64px;
+    padding-top: 0;
+    margin-right: 4rem;
   }
 }
 @media (min-width: 768px) {
   .footer__pearl {
-    margin-right: 60px;
+    margin-right: 3.75rem;
   }
 }
 .footer__name {
@@ -348,18 +430,18 @@ ul {
   font-weight: 600;
 }
 .footer__address {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .footer__email {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 .footer__email-link {
   text-decoration: none;
   color: white;
 }
 .footer__copyright {
-  padding-top: 48px;
+  padding-top: 3rem;
 }
 @media (min-width: 768px) {
   .footer__copyright {
@@ -367,42 +449,62 @@ ul {
   }
 }
 .footer__logo {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
   .footer__logo {
     position: absolute;
-    right: 35px;
-    top: 61px;
+    right: 2.188rem;
+    top: 3.875rem;
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__logo {
+    right: 8.125rem;
   }
 }
 @media (min-width: 768px) {
   .footer__socials-container {
     display: flex;
-    margin-left: 36px;
-    padding-top: 48px;
-    margin-bottom: 0px;
-    margin-right: 36px;
+    margin-left: 2.25rem;
+    padding-top: 3rem;
+    margin-bottom: 0;
+    margin-right: 2.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__socials-container {
+    margin: 0%;
   }
 }
 @media (min-width: 768px) {
   .footer__socials {
-    margin-top: 11px;
-    margin-left: 36px;
-    margin-bottom: 36px;
+    margin-top: 0.688rem;
+    margin-left: 2.25rem;
+    margin-bottom: 2.25rem;
   }
 }
 @media (min-width: 768px) {
   .footer__contacts {
     display: flex;
-    margin-left: 36px;
+    margin-left: 2.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__contacts {
+    margin: 0;
   }
 }
 @media (min-width: 768px) {
   .footer__copy {
-    padding-bottom: 36px;
-    padding-top: 48px;
-    margin-left: 36px;
+    padding-bottom: 2.25rem;
+    padding-top: 1.5rem;
+    margin-left: 2.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__copy {
+    margin: 0;
   }
 }/*# sourceMappingURL=bio.css.map */
