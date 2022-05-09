@@ -175,6 +175,7 @@ ul {
 @media (min-width: 1280px) {
   .hero__image {
     height: 100vh;
+    background-position: top;
   }
 }
 .hero__overlay {
