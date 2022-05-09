@@ -85,13 +85,13 @@
     color: $primarytwo;
     text-decoration: none;
     padding-bottom: 1rem;
-    border-bottom: 4px solid $primarytwo;
+    border-bottom: 0.25rem solid $primarytwo;
     font-weight: 700;
     padding-left: 3rem;
     padding-right: 2.6rem;
 
     @include tablet {
-      border-bottom: 4px solid $primarytwo;
+      border-bottom: 0.25rem solid $primarytwo;
       font-weight: 600;
       padding-left: 0;
       padding-right: 0;

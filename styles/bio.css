@@ -103,14 +103,14 @@ ul {
   color: #ffffff;
   text-decoration: none;
   padding-bottom: 1rem;
-  border-bottom: 4px solid #ffffff;
+  border-bottom: 0.25rem solid #ffffff;
   font-weight: 700;
   padding-left: 3rem;
   padding-right: 2.6rem;
 }
 @media (min-width: 768px) {
   .navigation__biography {
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 0.25rem solid #ffffff;
     font-weight: 600;
     padding-left: 0;
     padding-right: 0;
